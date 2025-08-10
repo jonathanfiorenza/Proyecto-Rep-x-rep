@@ -464,7 +464,110 @@
                   </p>
                 </div>
                 <div class="col-12 col-lg-auto">
-                  <a href="#" class="btn btn-primary btn-lg">Apply Now</a>
+                  <!-- Botón que abre el modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#assessmentModal"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- MODAL -->
+            <div
+              class="modal fade"
+              id="assessmentModal"
+              tabindex="-1"
+              aria-labelledby="assessmentModalLabel"
+              aria-hidden="true"
+              data-bs-theme="dark"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-light">
+                  <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="assessmentModalLabel">
+                      Assessment · REPXREP
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="name" class="form-label"
+                          >Nombre completo</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Tu nombre"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label"
+                          >Correo electrónico</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="tu@email.com"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="goals" class="form-label">Objetivos</label>
+                        <textarea
+                          class="form-control"
+                          id="goals"
+                          rows="3"
+                          placeholder="Ej: Ganar masa muscular, mejorar resistencia, bajar grasa..."
+                          required
+                        ></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="location" class="form-label">Ciudad</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="location"
+                          placeholder="Ej: NYC, Omaha, Montauk"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="budget" class="form-label"
+                          >Presupuesto estimado</label
+                        >
+                        <select id="budget" class="form-select">
+                          <option value="">Seleccionar...</option>
+                          <option value="premium">$3,000+ (Premium)</option>
+                          <option value="standard">$1,500 - $2,999</option>
+                          <option value="basic">Menos de $1,500</option>
+                        </select>
+                      </div>
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">
+                          Enviar solicitud
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer border-secondary">
+                    <small class="text-secondary"
+                      >REPXREP garantiza privacidad y respuesta en 48 horas
+                      hábiles.</small
+                    >
+                  </div>
                 </div>
               </div>
             </div>
