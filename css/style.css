@@ -8,7 +8,7 @@ main {
     flex-grow: 1;
 }
 
-nav {
+nav,footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
