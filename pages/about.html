@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,56 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand logo-empresa text-white active" href="./index.html">Rep<span class="fw-bold">X</span>Rep</a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesNavbar"
+            aria-controls="opcionesNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opcionesNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link  text-white"
+                  aria-current="page"
+                  href="./pages/login.html"
+                  >Login</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <button
+                  type="button border"
+                  class="btn btn-outline text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subscribeModal"
+                >Subscribe
+                </button>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="./pages/contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./pages/about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
     <main>
       <section data-bs-theme="dark" class="bg-dark text-light">
         <!-- HERO / ABOUT -->
