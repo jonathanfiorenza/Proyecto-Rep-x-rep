@@ -75,6 +75,115 @@
         </div>
       </nav>
     </header>
+    <!--Modal registro de suscripcion-->
+    <div
+      class="modal fade"
+      id="subscribeModal"
+      tabindex="-1"
+      aria-labelledby="subscribeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h2 class="modal-title fs-5 text-white" id="subscribeModalLabel">
+              Rep<span class="fw-bold">X</span>Rep
+            </h2>
+            <button
+              type="button "
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close "
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row row-gap-3">
+                <div class="col-md-6 order-1 order-md-0">
+                  <img
+                    src="./img/logorepxrep.png "
+                    alt="Alcancia"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-6 order-0">
+                  <form>
+                    <div class="mb-3">
+                      <label for="nombreApellido" class="form-label"
+                        >Nombre y apellido *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombreApellido"
+                        aria-describedby="nombre y apellido"
+                        required
+                        minlength="5"
+                        maxlength="150"
+                        placeholder="Ej: Jonathan fiore"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        aria-describedby="email"
+                        required
+                        placeholder="Ej: jonifiore@gmail.com"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label"
+                        >Contraseña</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Ej:547
+                          #45"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password2" class="form-label"
+                        >Repetir contraseña</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password2"
+                        placeholder="Ej:547
+                          #45"
+                        required
+                      />
+                    </div>
+                    <!--tilde de notificaciones-->
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="notificationsCheck"
+                        checked
+                      />
+                      <label class="form-check-label" for="notificationsCheck">
+                        Recibir notificaciones
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
       <section data-bs-theme="dark" class="bg-dark text-light">
         <!-- HERO / ABOUT -->
