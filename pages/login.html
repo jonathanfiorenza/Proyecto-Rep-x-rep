@@ -61,12 +61,16 @@
               </li>
 
               <li class="nav-item me-1">
-                <a class="nav-link btn btn-primary text-white" href="./pages/contact.html"
+                <a
+                  class="nav-link btn btn-primary text-white"
+                  href="./pages/contact.html"
                   >Contact</a
                 >
               </li>
-              <li class="nav-item ">
-                <a class="nav-link btn btn-primary text-white" href="./pages/about.html"
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-white"
+                  href="./pages/about.html"
                   >About</a
                 >
               </li>
@@ -77,13 +81,13 @@
     </header>
     <!--Modal registro de suscripcion-->
     <div
-      class="modal fade "
+      class="modal fade"
       id="subscribeModal"
       tabindex="-1"
       aria-labelledby="subscribeModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog ">
+      <div class="modal-dialog">
         <div class="modal-content bg-dark-subtle">
           <div class="modal-header bg-primary">
             <h2 class="modal-title fs-5 text-white" id="subscribeModalLabel">
@@ -110,8 +114,8 @@
                   <form>
                     <div class="mb-3">
                       <label for="nombreApellido" class="form-label"
-                        >Name and surname </label
-                      >
+                        >Name and surname
+                      </label>
                       <input
                         type="text"
                         class="form-control"
@@ -135,9 +139,7 @@
                       />
                     </div>
                     <div class="mb-3">
-                      <label for="password" class="form-label"
-                        >Password</label
-                      >
+                      <label for="password" class="form-label">Password</label>
                       <input
                         type="password"
                         class="form-control"
@@ -173,9 +175,7 @@
                       </label>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">
-                     Send
-                    </button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                   </form>
                 </div>
               </div>
@@ -185,7 +185,59 @@
       </div>
     </div>
     <main>
-      
+      <div class="container vh-100 d-flex align-items-center">
+        <div class="row w-100 justify-content-center align-items-center">
+          <!-- formulario de login -->
+          <div class="col-md-6 d-flex justify-content-center">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <!-- img del proyecto -->
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              src="../img/logorepxrep.png"
+              alt="image of the page's logo"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script
@@ -193,5 +245,5 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
