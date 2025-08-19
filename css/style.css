@@ -2,13 +2,13 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.form-control{
-    border: none;
-    border-bottom: 1px solid white;
-    color: aliceblue;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 0;
-    outline: none;
+.form-control {
+  border: none;
+  border-bottom: 1px solid white;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  outline: none;
 }
 
 .form-control:focus {
@@ -17,8 +17,8 @@ body {
   outline: none; /* Elimina el contorno predeterminado */
 }
 
-.btn-dark:hover{
-    background-color: blue;
-    color: #fff;
-    transition: 600ms;
+.btn-dark:hover {
+  background-color: blue;
+  color: #fff;
+  transition: 600ms;
 }
