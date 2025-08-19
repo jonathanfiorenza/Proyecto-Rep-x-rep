@@ -1,7 +1,20 @@
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.card {
+  overflow: hidden;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 
 }
 main { 
@@ -12,10 +25,16 @@ nav,footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
 .logo {
     max-height: 180px; 
+
+   }
+
+
 
    }
 .textarea {
     resize: none;
 }  
+
