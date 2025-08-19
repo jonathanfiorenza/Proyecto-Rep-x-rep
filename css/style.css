@@ -15,3 +15,6 @@ nav,footer {
 .logo {
     max-height: 180px; 
    }
+.textarea {
+    resize: none;
+}  
