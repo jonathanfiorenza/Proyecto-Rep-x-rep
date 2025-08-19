@@ -2,15 +2,6 @@ nav {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.btnsubmit:hover {
-  background-color: blue;
-}
-
-.btnsubmit {
-  width: 15%;
-  height: 15%;
-}
-
 .form-control{
     border: none;
     border-bottom: 1px solid white;
