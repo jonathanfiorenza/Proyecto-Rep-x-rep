@@ -16,3 +16,9 @@ nav {
   box-shadow: none; /* Elimina el sombreado */
   outline: none; /* Elimina el contorno predeterminado */
 }
+
+.btn-dark:hover{
+    background-color: blue;
+    color: #fff;
+    transition: 600ms;
+}
