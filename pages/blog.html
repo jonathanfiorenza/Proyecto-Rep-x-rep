@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,20 +11,198 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>blog</title>
   </head>
-  <body>
-    <header></header>
+  <body class="bg-primary-subtle">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand logo-empresa text-white" href="../index.html"
+            >Rep<span class="fw-bold">X</span>Rep</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesNavbar"
+            aria-controls="opcionesNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opcionesNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-white me-1"
+                  aria-current="page"
+                  href="./pages/login.html"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item me-1">
+                <a
+                  type="button"
+                  class="nav-link btn btn-primary text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subscribeModal"
+                >
+                  Subscribe
+                </a>
+              </li>
+              <li class="nav-item me-1">
+                <a
+                  class="nav-link btn btn-primary text-white"
+                  href="./pages/contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-white"
+                  href="./pages/about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-white active"
+                  href="./pages/blog.html"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Modal registro de suscripcion-->
+      <div
+        class="modal fade"
+        id="subscribeModal"
+        tabindex="-1"
+        aria-labelledby="subscribeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-primary">
+              <h2 class="modal-title fs-5 text-white" id="subscribeModalLabel">
+                Rep<span class="fw-bold">X</span>Rep
+              </h2>
+              <button
+                type="button "
+                class="btn-close bg-white"
+                data-bs-dismiss="modal"
+                aria-label="Close "
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row row-gap-3">
+                  <div class="col-md-6 order-1 order-md-0">
+                    <img
+                      src="./img/logo de modal blanco.png"
+                      alt="Alcancia"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-6 order-0">
+                    <form>
+                      <div class="mb-3">
+                        <label for="nombreApellido" class="form-label"
+                          >Name and surname
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nombreApellido"
+                          aria-describedby="nombre y apellido"
+                          required
+                          minlength="5"
+                          maxlength="150"
+                          placeholder="Ej: Jonathan fiore"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          aria-describedby="email"
+                          required
+                          placeholder="Ej: jonifiore@gmail.com"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          placeholder="Ej:547
+                          #45"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="password2" class="form-label"
+                          >Repeat password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password2"
+                          placeholder="Ej:547
+                          #45"
+                          required
+                        />
+                      </div>
+                      <!--tilde de notificaciones-->
+                      <div class="form-check mb-3">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="notificationsCheck"
+                          checked
+                        />
+                        <label
+                          class="form-check-label"
+                          for="notificationsCheck"
+                        >
+                          Receive notifications
+                        </label>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Send
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section>
-        <div class="container-fluid">
-          <video src="../img/chicos fit.mp4" autoplay class="w-100"></video>
+        <h1 class="text-center text-success">Ways to Enhance Your Health</h1>
+        <div class="container d-flex justify-content-center">
+          <img src="../img/1000652203.jpg" alt="" class="w-75" />
         </div>
       </section>
 
       <section class="container my-4">
-        <h2 class="text-center text-success">Ways to Enhance Your Health</h2>
         <p class="lead">
           We believe that a healthy life is the key to a full and happy life.We
           share some practical and effective tips to improve your health and
@@ -38,140 +216,84 @@
       <section class="container my-5">
         <h2 class="fs-1">Recipes</h2>
         <article class="row mt-4">
-          <div class="col-12 col-md-6">
-            <img src="../img/galleta de avena.jpg" alt="" class="w-100" />
-          </div>
-          <div class="col-12 col-md-6">
-            <h4 class="lead">cookies</h4>
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="row">
-              <div class="col-12 col-md-6">
-                <p class="lead">Ingredients</p>
-                <ul class="lead">
-                  <li>2 cups rolled oats</li>
-                  <li>1 cup all-purpose flour</li>
-                  <li>1/2 cup brown sugar</li>
-                  <li>1/2 cup melted butter</li>
-                  <li>2 eggs</li>
-                  <li>1 teaspoon cinnamon</li>
-                  <li>1/2 teaspoon salt</li>
-                  <li>1 cup raisins (optional)</li>
-                </ul>
+              <div class="col-md-4">
+                <img
+                  src="../img/galleta de avena.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
               </div>
-              <div class="col-12 col-md-6">
-                <p class="lead">Instructions</p>
-                <ol class="lead">
-                  <li>Preheat oven to 350°F (180°C)</li>
-                  <li>
-                    Mix oats, flour, brown sugar, cinnamon, and salt in a large
-                    bowl
-                  </li>
-                  <li>
-                    In another bowl, mix melted butter, eggs, and raisins (if
-                    using)
-                  </li>
-                  <li>
-                    Add wet ingredients to dry ingredients and stir until well
-                    combined.
-                  </li>
-                  <li>
-                    Drop spoonfuls of mixture onto a baking sheet lined with
-                    parchment pape
-                  </li>
-                  <li>
-                    Bake for 10-12 minutes or until cookies are golden brown
-                  </li>
-                </ol>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">cookies</h5>
+                  <p class="card-text">Ingredients.</p>
+                  <ul class="">
+                    <li>2 cups rolled oats</li>
+                    <li>1 cup all-purpose flour</li>
+                    <li>1/2 cup brown sugar</li>
+                    <li>1/2 cup melted butter</li>
+                    <li>2 eggs</li>
+                    <li>1 teaspoon cinnamon</li>
+                    <li>1/2 teaspoon salt</li>
+                    <li>1 cup raisins (optional)</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col-12 col-md-6">
-              <div class="clearfix">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="row">
+              <div class="col-md-4">
                 <img
                   src="../img/salmon.jpg"
-                  class="col-md-6 float-md-end mb-3 ms-md-3"
-                  alt="plato de salmon con esparrajos"
+                  class="img-fluid rounded-start"
+                  alt="..."
                 />
-                <h4>Grilled salmon with asparagus</h4>
-                <p>
-                  Salmon is rich in omega-3s, and asparagus is an excellent
-                  source of fiber.
-                </p>
-
-                <p>Ingredients.</p>
-                <ul>
-                  <li>1.3 kg of salmon fillets</li>
-                  <li>32 green asparagus</li>
-                  <li>32 fresh purple asparagus</li>
-                  <li>400g margarine</li>
-                  <li>3 lemons</li>
-                  <li>40g fresh dill</li>
-                  <li>salt</li>
-                  <li>ground black pepper</li>
-                </ul>
-
-                <p>Instructions.</p>
-                <ol>
-                  <li>
-                    We start by cleaning the salmon and cutting the base of the
-                    asparagus.
-                  </li>
-                  <li>
-                    On a non-stick grill plate, we break up a nut of margarine.
-                  </li>
-                  <li>
-                    We place the salmon skin-side down and let it brown without
-                    moving it.
-                  </li>
-                  <li>
-                    Season with salt and pepper, turn it over, and cook for 4
-                    more minutes.
-                  </li>
-                  <li>
-                    Then we brown the asparagus, turning them occasionally so
-                    that they brown evenly.
-                  </li>
-                  <li>
-                    Finally, we plate the asparagus at the bottom of the plate,
-                    the salmon on top, and the asparagus tips, chopped dill, and
-                    lemon zest as the final topping.
-                  </li>
-                </ol>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Grilled salmon with asparagus</h5>
+                  <p class="card-text">Ingredients.</p>
+                  <ul>
+                    <li>1.3 kg of salmon fillets</li>
+                    <li>32 green asparagus</li>
+                    <li>32 fresh purple asparagus</li>
+                    <li>400g margarine</li>
+                    <li>3 lemons</li>
+                    <li>40g fresh dill</li>
+                    <li>salt</li>
+                    <li>ground black pepper</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="clearfix">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="row">
+              <div class="col-md-4">
                 <img
                   src="../img/sandwich.jpeg"
-                  class="col-md-6 float-md-end mb-3 ms-md-3"
-                  alt="sandwich de pollo"
+                  class="img-fluid rounded-start"
+                  alt="..."
                 />
-                <h4>chicken sandwich</h4>
-                <p>
-                  The perfect recipe for a light chicken sandwich with cream
-                  cheese.
-                </p>
-
-                <p>Ingredients.</p>
-                <ul>
-                  <li>Seeded bread</li>
-                  <li>Light cream cheese</li>
-                  <li>Arugula</li>
-                  <li>2 chicken breasts</li>
-                  <li>avocado</li>
-                </ul>
-
-                <p>Instructions.</p>
-                <ol>
-                  <li>Cut the chicken breast into thin strips.</li>
-                  <li>In a pan, grill the breasts until well cooked.</li>
-                  <li>
-                    Meanwhile, cut the bread into slices and spread a layer of
-                    spreadable cheese
-                  </li>
-                  <li>Add the lettuce, avocado and salt and pepper.</li>
-                  <li>¡ready to enjoy!.</li>
-                </ol>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">cookies</h5>
+                  <p class="card-text">Ingredients.</p>
+                  <ul class="">
+                    <li>4 slices of bread</li>
+                    <li>1 chicken breast</li>
+                    <li>mayonnaise</li>
+                    <li>1 teaspoon curry powder</li>
+                    <li>Tomato</li>
+                    <li>Lettuce</li>
+                    <li>avocado (optional)</li>
+                    <li>salt</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -179,15 +301,17 @@
       </section>
       <section class="container">
         <article class="bg-secondary-subtle">
-          <h2 class="text-center">meditation</h2>
-          <p class="lead">
+          <h2 class="text-center py-3">meditation</h2>
+          <p class="lead m-3">
             Guided meditation can be very effective for calming anxiety and
             stress. The practice involves following the instructions of an audio
             or guide, which helps you focus on your breathing, relax your body
             and mind, and visualize situations or sensations that promote calm.
           </p>
-          <p class="lead">Basic steps of a guided meditation for anxiety:</p>
-          <ol class="lead">
+          <p class="lead m-3">
+            Basic steps of a guided meditation for anxiety:
+          </p>
+          <ol class="lead m-3 p-3">
             <li>
               <strong>Find a quiet place:</strong> Find a space where you can
               sit or lie down without interruptions.
@@ -234,12 +358,7 @@
         <article class="">
           <div class="card-group gap-3">
             <div class="card">
-              <video
-                src="https://videos.pexels.com/video-files/6454280/6454280-uhd_1440_2560_24fps.mp4"
-                autoplay
-                muted
-                class="w-100"
-              ></video>
+              
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -255,12 +374,7 @@
               </div>
             </div>
             <div class="card">
-              <video
-                src="https://videos.pexels.com/video-files/4686178/4686178-hd_1080_1920_30fps.mp4"
-                autoplay
-                muted
-                class="w-100"
-              ></video>
+              <img src="../img/1000652213.jpg" alt="" class="w-100" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -275,12 +389,7 @@
               </div>
             </div>
             <div class="card">
-              <video
-                src="https://videos.pexels.com/video-files/6326779/6326779-hd_1080_1920_25fps.mp4"
-                autoplay
-                muted
-                class="w-100"
-              ></video>
+              <img src="../img/1000652218.jpg" alt="" class="w-100" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -358,12 +467,68 @@
 
           <div class="my-3 bg-danger-subtle">
             <p class="m-2">luisaphill@gmail</p>
-            <p class="m-2">"Keep it up! Your blog is making a huge difference."</p>
+            <p class="m-2">
+              "Keep it up! Your blog is making a huge difference."
+            </p>
           </div>
         </article>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer text-white pt-3">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-4">
+            <img
+              src="../img/logo-footer.png"
+              alt="logo"
+              class="img-fluid logo"
+            />
+          </div>
+          <div class="col-12 col-md-4">
+            <h5 class="fs-4">Follow us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Facebook</a
+                ><i class="mx-2 text-primary bi bi-facebook"></i>
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-white text-decoration-none">Instagram</a
+                ><i class="mx-2 text-danger bi bi-instagram"></i>
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-white text-decoration-none">TikTok</a
+                ><i class="mx-2 bi bi-tiktok"></i>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Youtube</a
+                ><i class="mx-2 text-danger bi bi-youtube"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h5 class="fs-4">Legal</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Terms and Conditions of Use</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Accessibility</a
+                >
+              </li>
+            </ul>
+            <p>&copy; All rights reserved 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
