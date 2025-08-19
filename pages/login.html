@@ -188,43 +188,30 @@
       <div class="container vh-100 d-flex align-items-center">
         <div class="row w-100 justify-content-center align-items-center">
           <!-- formulario de login -->
-          <div class="col-md-6 d-flex justify-content-center">
-            <form>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <div class="mb-3"><h1 class="text-white">Welcome Back!</h1></div>
+            <form class="text-white">
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
+                <label for="usarname1" class="form-label"
+                  >Username</label
                 >
                 <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
+                  type="text"
+                  class="form-control w-75"
+                  id="usarname1"
                 />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
+                <label for="password1" class="form-label"
                   >Password</label
                 >
                 <input
                   type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
+                  class="form-control w-75"
+                  id="password1"
                 />
               </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label
-                >
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-dark btnsubmit">LOG IN</button>
             </form>
           </div>
 
