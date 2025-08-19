@@ -1,0 +1,57 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid white;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: #ced4da; /* Vuelve al color de borde original */
+  box-shadow: none; /* Elimina el sombreado */
+  outline: none; /* Elimina el contorno predeterminado */
+}
+
+.btn-dark:hover {
+  background-color: blue;
+  color: #fff;
+  transition: 600ms;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.card {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+
+nav,
+footer {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logo {
+  max-height: 180px;
+}
+
+.textarea {
+  resize: none;
+}
