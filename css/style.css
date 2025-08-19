@@ -1,5 +1,27 @@
-
-
 nav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btnsubmit:hover {
+  background-color: blue;
+}
+
+.btnsubmit {
+  width: 15%;
+  height: 15%;
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid white;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    outline: none;
+}
+
+.form-control:focus {
+  border-color: #ced4da; /* Vuelve al color de borde original */
+  box-shadow: none; /* Elimina el sombreado */
+  outline: none; /* Elimina el contorno predeterminado */
 }
