@@ -22,13 +22,11 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark sticky-top">
         <div class="container">
-          <a
-            class="navbar-brand logo-empresa text-white active"
-            href="./index.html"
+          <a class="navbar-brand logo-empresa text-white" href="./index.html"
             >Rep<span class="fw-bold">X</span>Rep</a
           >
           <button
-            class="navbar-toggler bg-white"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#opcionesNavbar"
@@ -42,31 +40,33 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link text-white"
+                  class="nav-link btn btn-primary text-white me-1"
                   aria-current="page"
                   href="./pages/login.html"
                   >Login</a
                 >
               </li>
-
-              <li class="nav-item">
-                <button
-                  type="button border"
-                  class="btn btn-outline text-white"
+              <li class="nav-item me-1">
+                <a
+                  type="button"
+                  class="nav-link btn btn-primary text-white"
                   data-bs-toggle="modal"
                   data-bs-target="#subscribeModal"
                 >
                   Subscribe
-                </button>
+                </a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./pages/contact.html"
+              <li class="nav-item me-1">
+                <a
+                  class="nav-link btn btn-primary text-white"
+                  href="./pages/contact.html"
                   >Contact</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="./pages/about.html"
+                <a
+                  class="nav-link btn btn-primary text-white"
+                  href="./pages/about.html"
                   >About</a
                 >
               </li>
@@ -75,16 +75,16 @@
         </div>
       </nav>
     </header>
-    <!--Modal registro de suscripcion-->
+ <!--Modal registro de suscripcion-->
     <div
-      class="modal fade"
+      class="modal fade "
       id="subscribeModal"
       tabindex="-1"
       aria-labelledby="subscribeModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
-        <div class="modal-content">
+      <div class="modal-dialog ">
+        <div class="modal-content ">
           <div class="modal-header bg-primary">
             <h2 class="modal-title fs-5 text-white" id="subscribeModalLabel">
               Rep<span class="fw-bold">X</span>Rep
@@ -101,7 +101,7 @@
               <div class="row row-gap-3">
                 <div class="col-md-6 order-1 order-md-0">
                   <img
-                    src="./img/logorepxrep.png "
+                    src="./img/logo de modal blanco.png"
                     alt="Alcancia"
                     class="img-fluid"
                   />
@@ -110,7 +110,7 @@
                   <form>
                     <div class="mb-3">
                       <label for="nombreApellido" class="form-label"
-                        >Nombre y apellido *</label
+                        >Name and surname </label
                       >
                       <input
                         type="text"
@@ -136,7 +136,7 @@
                     </div>
                     <div class="mb-3">
                       <label for="password" class="form-label"
-                        >Contraseña</label
+                        >Password</label
                       >
                       <input
                         type="password"
@@ -149,7 +149,7 @@
                     </div>
                     <div class="mb-3">
                       <label for="password2" class="form-label"
-                        >Repetir contraseña</label
+                        >Repeat password</label
                       >
                       <input
                         type="password"
@@ -169,12 +169,12 @@
                         checked
                       />
                       <label class="form-check-label" for="notificationsCheck">
-                        Recibir notificaciones
+                        Receive notifications
                       </label>
                     </div>
 
                     <button type="submit" class="btn btn-primary">
-                      Enviar
+                     Send
                     </button>
                   </form>
                 </div>
@@ -183,7 +183,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>    </div>
     <main>
       <section data-bs-theme="dark" class="bg-dark text-light">
         <!-- HERO / ABOUT -->
