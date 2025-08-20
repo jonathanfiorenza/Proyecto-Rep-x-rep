@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
+
 }
 main { 
     flex-grow: 1;
@@ -12,10 +13,19 @@ nav,footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
 .logo {
     max-height: 180px; 
+
+   }
+
+
 
    }
 .textarea {
     resize: none;
 }  
+<<<<<<< HEAD
+=======
+
+>>>>>>> 07cfafff2d59151f293e710b97ef4631f047868e
