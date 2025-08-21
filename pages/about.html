@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bienestar fisico" />
+    <meta name="author" content="grupo3" />
+    <title>Rep x rep</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container">
+          <a
+            class="navbar-brand logo-empresa text-white active"
+            href="../index.html"
+            >Rep<span class="fw-bold">X</span>Rep</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesNavbar"
+            aria-controls="opcionesNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opcionesNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary text-white me-1"
+                  aria-current="page"
+                  href="./login.html"
+                  >Login</a
+                >
+              </li>
+
+              <li class="nav-item me-1">
+                <a
+                  type="button"
+                  class="nav-link btn btn-primary text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subscribeModal"
+                >
+                  Subscribe
+                </a>
+              </li>
+
+              <li class="nav-item me-1">
+                <a
+                  class="nav-link btn btn-primary text-white"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white" href="about.html"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Modal registro de suscripcion-->
+    <div
+      class="modal fade"
+      id="subscribeModal"
+      tabindex="-1"
+      aria-labelledby="subscribeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h2 class="modal-title fs-5 text-white" id="subscribeModalLabel">
+              Rep<span class="fw-bold">X</span>Rep
+            </h2>
+            <button
+              type="button "
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close "
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row row-gap-3">
+                <div class="col-md-6 order-1 order-md-0">
+                  <img
+                    src="../img/logo de modal blanco.png"
+                    alt="Alcancia"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-6 order-0">
+                  <form>
+                    <div class="mb-3">
+                      <label for="nombreApellido" class="form-label"
+                        >Name and surname
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombreApellido"
+                        aria-describedby="nombre y apellido"
+                        required
+                        minlength="5"
+                        maxlength="150"
+                        placeholder="Ej: Jonathan fiore"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        aria-describedby="email"
+                        required
+                        placeholder="Ej: jonifiore@gmail.com"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Ej:547
+                          #45"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password2" class="form-label"
+                        >Repeat password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password2"
+                        placeholder="Ej:547
+                          #45"
+                        required
+                      />
+                    </div>
+                    <!--tilde de notificaciones-->
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="notificationsCheck"
+                        checked
+                      />
+                      <label class="form-check-label" for="notificationsCheck">
+                        Receive notifications
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="bg-primary-subtle">
+      <section data-bs-theme="dark" class="bg-dark text-light m-5">
+        <!-- HERO / ABOUT -->
+        <div class="py-5 border-bottom border-secondary-subtle">
+          <div class="container">
+            <div class="row align-items-center g-4">
+              <div class="col-12 col-lg-7">
+                <span class="badge text-bg-secondary mb-3"
+                  >REPXREP · About</span
+                >
+                <h1 class="display-5 fw-semibold mb-3">
+                  Elite Coaching for Bodies that Tell Stories
+                </h1>
+                <p class="lead text-secondary mb-4">
+                  We are a group of programmers passionate about physical
+                  well-being. Our goal is simple: to develop tools that help you
+                  take care of your body and mind, no matter where you are.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="#" class="btn btn-primary btn-lg"
+                    >Start Assessment</a
+                  >
+                  <a href="#" class="btn btn-outline-light btn-lg"
+                    >Download Brochure</a
+                  >
+                </div>
+                <p class="text-secondary small mt-3 mb-0">
+                  High-ticket clients · Absolute privacy · Measurable results
+                </p>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+                  <img
+                    src="/img/1000652211.jpg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="REPXREP About"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MISSION / VALUES -->
+        <div class="py-5 border-bottom border-secondary-subtle">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-12 col-lg-4">
+                <h2 class="h3 fw-semibold">Our Mission</h2>
+                <p class="text-secondary mb-0">
+                  To create deep and sustainable transformations by combining
+                  science, aesthetics, and performance with world-class service.
+                </p>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="row g-3 row-cols-1 row-cols-sm-2">
+                  <div class="col">
+                    <div class="card h-100 bg-body-tertiary shadow-sm">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                          <i class="bi bi-activity fs-4 me-2"></i>
+                          <h3 class="h5 mb-0">Applied Science</h3>
+                        </div>
+                        <p class="text-secondary mb-0">
+                          Evidence-based protocols, clear metrics, and weekly
+                          adjustments.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 bg-body-tertiary shadow-sm">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                          <i class="bi bi-gem fs-4 me-2"></i>
+                          <h3 class="h5 mb-0">Boutique Experience</h3>
+                        </div>
+                        <p class="text-secondary mb-0">
+                          Discreet attention, client-first timing, luxury
+                          standards.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 bg-body-tertiary shadow-sm">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                          <i class="bi bi-bullseye fs-4 me-2"></i>
+                          <h3 class="h5 mb-0">Aesthetic Precision</h3>
+                        </div>
+                        <p class="text-secondary mb-0">
+                          Technical execution for clean lines, symmetry, and
+                          presence.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 bg-body-tertiary shadow-sm">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                          <i class="bi bi-shield-lock fs-4 me-2"></i>
+                          <h3 class="h5 mb-0">Privacy & Ethics</h3>
+                        </div>
+                        <p class="text-secondary mb-0">
+                          Total confidentiality and responsible decisions about
+                          your health.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- METHOD / PILLARS -->
+        <div class="py-5 border-bottom border-secondary-subtle">
+          <div class="container">
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-xl-5">
+                <h2 class="h3 fw-semibold mb-3">The REPXREP Method</h2>
+                <p class="text-secondary">
+                  A 4-pillar framework that integrates assessment, programming,
+                  nutrition, and high-level accountability to generate visible
+                  and sustainable results.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark text-light">
+                    <i class="bi bi-heart-pulse me-2"></i>
+                    360º Assessment (biomarkers, posture, habits, stress)
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    <i class="bi bi-bar-chart-line me-2"></i>
+                    Periodized Programming (strength, hypertrophy, mobility)
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    <i class="bi bi-nutrition me-2"></i>
+                    Concierge Nutrition (macro & micro, adherence protocols)
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    Executive Follow-up (weekly KPIs, fine-tuned adjustments)
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-xl-7">
+                <div class="row g-3 row-cols-1 row-cols-sm-2">
+                  <div class="col">
+                    <div class="ratio ratio-4x3 rounded overflow-hidden">
+                      <img
+                        src="/img/1000652215.jpg"
+                        class="w-100 h-100 object-fit-cover"
+                        alt="Method 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="ratio ratio-4x3 rounded overflow-hidden">
+                      <img
+                        src="/img/1000652244.jpg"
+                        class="w-100 h-100 object-fit-cover"
+                        alt="Method 2"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="ratio ratio-4x3 rounded overflow-hidden">
+                      <img
+                        src="/img/1000652218.jpg"
+                        class="w-100 h-100 object-fit-cover"
+                        alt="Method 3"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="ratio ratio-4x3 rounded overflow-hidden">
+                      <img
+                        src="/img/1000652264.jpg"
+                        class="w-100 h-100 object-fit-cover"
+                        alt="Method 4"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="text-secondary small mt-2">
+                  *Illustrative images. Individual results may vary.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATS / SOCIAL PROOF -->
+        <div class="py-5 border-bottom border-secondary-subtle">
+          <div class="container">
+            <div class="row g-4 row-cols-2 row-cols-md-4 text-center">
+              <div class="col">
+                <div class="display-5 fw-bold">1.2k+</div>
+                <div class="text-secondary">Clients coached</div>
+              </div>
+              <div class="col">
+                <div class="display-5 fw-bold">94%</div>
+                <div class="text-secondary">Average adherence</div>
+              </div>
+              <div class="col">
+                <div class="display-5 fw-bold">12</div>
+                <div class="text-secondary">Cities served</div>
+              </div>
+              <div class="col">
+                <div class="display-5 fw-bold">4.9★</div>
+                <div class="text-secondary">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEAM -->
+        <div class="py-5 border-bottom border-secondary-subtle" id="team">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h2 class="h3 fw-semibold mb-0">About us</h2>
+              <a href="#" class="link-light text-decoration-none">
+                Conócenos <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+              <!-- Matías Salinas -->
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="ratio ratio-4x3">
+                    <img
+                      src="/img/matias salinas.jpeg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Matías Salinas — Entrenamiento & Programación"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-1">Matías Salinas</h3>
+                    <p class="text-secondary mb-2">
+                      Fuerza e hipertrofia · Frontend
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge text-bg-primary-subtle">Coach</span>
+                      <span class="badge text-bg-light">JS/React</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Valeria Stakelun -->
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="ratio ratio-4x3">
+                    <img
+                      src="/img/valeria stakelun.jpeg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Valeria Stakelun — Entrenamiento & Programación"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-1">Valeria Stakelun</h3>
+                    <p class="text-secondary mb-2">
+                      Funcional & bienestar · UI/UX
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge text-bg-primary-subtle">Coach</span>
+                      <span class="badge text-bg-light">Diseño UI</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rocío Arreguez -->
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="ratio ratio-4x3">
+                    <img
+                      src="/img/rocio arreguez.jpeg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Rocío Arreguez — Entrenamiento & Programación"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-1">Rocío Arreguez</h3>
+                    <p class="text-secondary mb-2">
+                      Movilidad & prevención · Backend
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge text-bg-primary-subtle">Mobility</span>
+                      <span class="badge text-bg-light">Node.js</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jonathan Fiorenza -->
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="ratio ratio-4x3">
+                    <img
+                      src="/img/jhonatan forenza.jpeg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Jonathan Fiorenza — Entrenamiento & Programación"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-1">Jonathan Fiorenza</h3>
+                    <p class="text-secondary mb-2">
+                      Programación de rutinas · Full-stack
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge text-bg-primary-subtle">Planning</span>
+                      <span class="badge text-bg-light">Full-stack</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Emanuel Medina -->
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="ratio ratio-4x3">
+                    <img
+                      src="/img/emanuel medina.jpeg"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Emanuel Medina — Entrenamiento & Programación"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-1">Emanuel Medina</h3>
+                    <p class="text-secondary mb-2">
+                      Resistencia & potencia · DevOps
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge text-bg-primary-subtle"
+                        >Endurance</span
+                      >
+                      <span class="badge text-bg-light">CI/CD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- José Casas -->
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="ratio ratio-4x3">
+                    <img
+                      src="/img/jose casas.JPG"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="José Casas — Top-1% Physique, Coach & Product"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-1">José Casas</h3>
+                    <p class="text-secondary mb-2">
+                      Top-1% Physique · Recomposition & Precision Programming
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                      <span class="badge text-bg-primary-subtle"
+                        >Body-Recomp</span
+                      >
+                      <span class="badge text-bg-success-subtle"
+                        >Data-Driven</span
+                      >
+                      <span class="badge text-bg-light">Product/Systems</span>
+                    </div>
+                    <p class="small text-secondary mb-0">
+                      Hybrid athlete-engineer: blends elite aesthetics and
+                      strength with custom software to track, automate, and
+                      personalize results.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="py-5 border-bottom border-secondary-subtle">
+          <div class="container">
+            <h2 class="h3 fw-semibold mb-4">Real Stories</h2>
+            <div class="row g-4 row-cols-1 row-cols-lg-3">
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="bi bi-quote fs-3 me-2"></i>
+                      <h3 class="h6 mb-0">Impeccable definition</h3>
+                    </div>
+                    <p class="text-secondary">
+                      “In 16 weeks I changed posture, energy, and composition.
+                      Total precision and executive follow-up.”
+                    </p>
+                    <div class="small text-secondary">
+                      — A., Executive • NYC
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="bi bi-quote fs-3 me-2"></i>
+                      <h3 class="h6 mb-0">True concierge</h3>
+                    </div>
+                    <p class="text-secondary">
+                      “Nutrition and training aligned with my schedule.
+                      Frictionless results.”
+                    </p>
+                    <div class="small text-secondary">
+                      — L., Founder • Montauk
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="bi bi-quote fs-3 me-2"></i>
+                      <h3 class="h6 mb-0">Performance + health</h3>
+                    </div>
+                    <p class="text-secondary">
+                      “I gained strength, lost fat, and sleep better. The weekly
+                      data made the difference.”
+                    </p>
+                    <div class="small text-secondary">— D., VP • Omaha</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="py-5">
+          <div class="container">
+            <h2 class="h3 fw-semibold mb-3">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="faq">
+              <div class="accordion-item bg-dark text-light border-secondary">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-dark text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    How long does a typical program last?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body text-secondary">
+                    We recommend 12- to 16-week blocks with weekly reviews and a
+                    reassessment every 4–6 weeks.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-light border-secondary">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-dark text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    Do you work both remotely and in person?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body text-secondary">
+                    Yes. Hybrid coaching with remote follow-up and select
+                    in-person sessions (NYC, Montauk, Omaha).
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-light border-secondary">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-dark text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    What does the high-ticket tier include?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body text-secondary">
+                    Priority access, concierge scheduling, coordination with
+                    healthcare professionals, and executive reports.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA FINAL -->
+            <div class="mt-5 p-4 p-md-5 bg-body-tertiary rounded-3">
+              <div class="row g-4 align-items-center">
+                <div class="col-12 col-lg">
+                  <h3 class="h4 fw-semibold mb-2">Ready for your best self?</h3>
+                  <p class="text-secondary mb-0">
+                    Apply for the Assessment and receive a preliminary plan
+                    within 48 hours.
+                  </p>
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <!-- Botón que abre el modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#assessmentModal"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- MODAL -->
+            <div
+              class="modal fade"
+              id="assessmentModal"
+              tabindex="-1"
+              aria-labelledby="assessmentModalLabel"
+              aria-hidden="true"
+              data-bs-theme="dark"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-light">
+                  <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="assessmentModalLabel">
+                      Assessment · REPXREP
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Full name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="you@example.com"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="goals" class="form-label">Goals</label>
+                        <textarea
+                          class="form-control textarea"
+                          id="goals"
+                          rows="3"
+                          placeholder="e.g., Build muscle, improve endurance, lose fat..."
+                          required
+                        ></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="location" class="form-label">City</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="location"
+                          placeholder="e.g., NYC, Omaha, Montauk"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="budget" class="form-label"
+                          >Estimated budget</label
+                        >
+                        <select id="budget" class="form-select">
+                          <option value="">Select...</option>
+                          <option value="premium">$3,000+ (Premium)</option>
+                          <option value="standard">$1,500 - $2,999</option>
+                          <option value="basic">Under $1,500</option>
+                        </select>
+                      </div>
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">
+                          Submit application
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer border-secondary">
+                    <small class="text-secondary"
+                      >REPXREP guarantees privacy and a response within 48
+                      business hours.</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer text-white pt-3">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-4">
+            <img
+              src="../img/logo-footer.png"
+              alt="logo"
+              class="img-fluid logo"
+            />
+          </div>
+          <div class="col-12 col-md-4">
+            <h5 class="fs-4">Follow us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Facebook</a
+                ><i class="mx-2 text-primary bi bi-facebook"></i>
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-white text-decoration-none">Instagram</a
+                ><i class="mx-2 text-danger bi bi-instagram"></i>
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-white text-decoration-none">TikTok</a
+                ><i class="mx-2 bi bi-tiktok"></i>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Youtube</a
+                ><i class="mx-2 text-danger bi bi-youtube"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h5 class="fs-4">Legal</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Terms and Conditions of Use</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Accessibility</a
+                >
+              </li>
+            </ul>
+            <p>&copy; All rights reserved 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

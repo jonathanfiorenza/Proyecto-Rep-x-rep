@@ -1,6 +1,12 @@
+
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 
 .form-control {
   border: none;
@@ -34,11 +40,8 @@ body {
   overflow: hidden;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+
+
 main {
   flex-grow: 1;
 }
