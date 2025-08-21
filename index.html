@@ -19,14 +19,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-
-</head>
-
+  </head>
 
   <body>
-
     <header>
-     <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top">
         <div class="container">
           <a
             class="navbar-brand logo-empresa text-white active"
@@ -49,7 +46,6 @@
               <li class="nav-item">
                 <a
                   class="nav-link btn btn-primary text-white me-1"
-                  class="nav-link btn btn-primary text-white me-1"
                   aria-current="page"
                   href="./pages/login.html"
                   >Login</a
@@ -65,7 +61,6 @@
                 >
                   Subscribe
                 </a>
-                </a>
               </li>
 
               <li class="nav-item me-1">
@@ -79,9 +74,6 @@
                 <a
                   class="nav-link btn btn-primary text-white"
                   href="./pages/about.html"
-                <a
-                  class="nav-link btn btn-primary text-white"
-                  href="./pages/about.html"
                   >About</a
                 >
               </li>
@@ -92,14 +84,14 @@
     </header>
     <!--Modal registro de suscripcion-->
     <div
-      class="modal fade "
+      class="modal fade"
       id="subscribeModal"
       tabindex="-1"
       aria-labelledby="subscribeModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog ">
-        <div class="modal-content ">
+      <div class="modal-dialog">
+        <div class="modal-content">
           <div class="modal-header bg-primary">
             <h2 class="modal-title fs-5 text-white" id="subscribeModalLabel">
               Rep<span class="fw-bold">X</span>Rep
@@ -116,7 +108,7 @@
               <div class="row row-gap-3">
                 <div class="col-md-6 order-1 order-md-0">
                   <img
-                    src="./img/logo de modal blanco.png"
+                    src="../img/logo de modal blanco.png"
                     alt="Alcancia"
                     class="img-fluid"
                   />
@@ -150,9 +142,7 @@
                       />
                     </div>
                     <div class="mb-3">
-                      <label for="password" class="form-label"
-                        >Password</label
-                      >
+                      <label for="password" class="form-label">Password</label>
                       <input
                         type="password"
                         class="form-control"
@@ -164,7 +154,6 @@
                     </div>
                     <div class="mb-3">
                       <label for="password2" class="form-label"
-                        >Repeat password</label
                         >Repeat password</label
                       >
                       <input
@@ -199,347 +188,322 @@
       </div>
     </div>
     <main>
-      <!DOCTYPE html>
-      <html lang="en" data-bs-theme="dark">
-        <head>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>REPXREP · Blog</title>
+      <!-- ===== FULL-WIDTH SLIDER ===== -->
+      <section>
+        <div id="hero" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#hero"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
 
-          <!-- Bootstrap CSS -->
-          <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-            crossorigin="anonymous"
-          />
-          <!-- Icons (for search input) -->
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-          />
-        </head>
-        <body class="bg-dark text-light">
-          <!-- ===== FULL-WIDTH SLIDER ===== -->
-          <section>
-            <div id="hero" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#hero"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#hero"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#hero"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/1000652245.jpg"
+                class="d-block w-100"
+                style="max-height: 60vh; object-fit: cover"
+                alt="Elite Training"
+              />
+              <div class="carousel-caption text-start">
+                <h2 class="fw-semibold text-white">Elite Training</h2>
+                <p class="mb-3 text-light">
+                  Measurable results, impeccable style.
+                </p>
+                <!--abre la pagina de error-->
+                <a class="btn btn-primary btn-lg" href="./pages/404.html"
+                  >Explore</a
+                >
               </div>
-
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="./img/1000652245.jpg"
-                    class="d-block w-100"
-                    style="max-height: 60vh; object-fit: cover"
-                    alt="Elite Training"
-                  />
-                  <div class="carousel-caption text-start">
-                    <h2 class="fw-semibold text-white">Elite Training</h2>
-                    <p class="mb-3 text-light">
-                      Measurable results, impeccable style.
-                    </p>
-                    <a class="btn btn-primary btn-lg" href="#content"
-                      >Explore</a
-                    >
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <img
-                    src="./img/1000652197.jpg"
-                    class="d-block w-100"
-                    style="max-height: 60vh; object-fit: cover"
-                    alt="Concierge Nutrition"
-                  />
-                  <div class="carousel-caption">
-                    <h2 class="fw-semibold text-white">Concierge Nutrition</h2>
-                    <p class="mb-3 text-light">
-                      Advanced macros with real adherence.
-                    </p>
-                    <a class="btn btn-outline-light btn-lg" href="#content"
-                      >Programs</a
-                    >
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <img
-                    src="./img/1000652219.jpg"
-                    class="d-block w-100"
-                    style="max-height: 60vh; object-fit: cover"
-                    alt="VIP Retreats"
-                  />
-                  <div class="carousel-caption text-end">
-                    <h2 class="fw-semibold text-white">VIP Retreats</h2>
-                    <p class="mb-3 text-light">
-                      Total reset in exclusive settings.
-                    </p>
-                    <a class="btn btn-primary btn-lg" href="#content"
-                      >Book Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#hero"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#hero"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
-          </section>
 
-          <!-- ===== TWO-COLUMN CONTENT ===== -->
-          <main class="py-5 bg-primary-subtle" id="content">
-            <div class="container">
-              <div class="row g-4">
-                <!-- ===== Left Column: Posts + Pagination ===== -->
-                <div class="col-12 col-lg-8">
-                  <!-- Post 1 -->
-                  <article
-                    class="card bg-dark border-secondary text-light mb-4 shadow-sm"
-                  >
-                    <div class="row g-0">
-                      <div class="col-md-5">
-                        <div class="ratio ratio-4x3">
-                          <img
-                            src="./img/1000652196.jpg"
-                            class="w-100 h-100"
-                            style="object-fit: cover"
-                            alt="Elite 1:1 Coaching"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-7">
-                        <div class="card-body">
-                          <h3 class="h5 card-title mb-2">Elite 1:1 Coaching</h3>
-                          <p class="card-text text-secondary">
-                            High-performance plan with daily check-ins to
-                            transform your physique sustainably.
-                          </p>
-                          <a
-                            class="btn btn-primary btn-sm"
-                            href="detail-elite.html"
-                            >Read more</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </article>
+            <div class="carousel-item">
+              <img
+                src="./img/1000652197.jpg"
+                class="d-block w-100"
+                style="max-height: 60vh; object-fit: cover"
+                alt="Concierge Nutrition"
+              />
+              <div class="carousel-caption">
+                <h2 class="fw-semibold text-white">Concierge Nutrition</h2>
+                <p class="mb-3 text-light">
+                  Advanced macros with real adherence.
+                </p>
+                <a class="btn btn-outline-light btn-lg" href="#content"
+                  >Programs</a
+                >
+              </div>
+            </div>
 
-                  <!-- Post 2 -->
-                  <article
-                    class="card bg-dark border-secondary text-light mb-4 shadow-sm"
-                  >
-                    <div class="row g-0">
-                      <div class="col-md-5">
-                        <div class="ratio ratio-4x3">
-                          <img
-                            src="./img/1000652197.jpg"
-                            class="w-100 h-100"
-                            style="object-fit: cover"
-                            alt="Concierge Nutrition Lab"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-7">
-                        <div class="card-body">
-                          <h3 class="h5 card-title mb-2">
-                            Concierge Nutrition Lab
-                          </h3>
-                          <p class="card-text text-secondary">
-                            Personalized nutrition with metrics and weekly
-                            adjustments for maximum adherence.
-                          </p>
-                          <a
-                            class="btn btn-primary btn-sm"
-                            href="detail-nutrition.html"
-                            >Read more</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                  <!-- Post 3 -->
-                  <article
-                    class="card bg-dark border-secondary text-light mb-4 shadow-sm"
-                  >
-                    <div class="row g-0">
-                      <div class="col-md-5">
-                        <div class="ratio ratio-4x3">
-                          <img
-                            src="./img/1000652198.jpg"
-                            class="w-100 h-100"
-                            style="object-fit: cover"
-                            alt="Physique Redesign"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-7">
-                        <div class="card-body">
-                          <h3 class="h5 card-title mb-2">Mage Gallery</h3>
-                          <p class="card-text text-secondary">
-                            Body recomposition with an aesthetic focus and
-                            controlled weekly milestones.
-                          </p>
-                          <a
-                            class="btn btn-primary btn-sm"
-                            href="./pages/galeriaImg.html"
-                            >Read more</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                  <!-- Pagination -->
-                  <nav aria-label="Posts pagination">
-                    <ul
-                      class="pagination justify-content-center flex-wrap gap-2"
-                    >
-                      <li class="page-item disabled">
-                        <span class="page-link">Previous</span>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item active" aria-current="page">
-                        <span class="page-link">3</span>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-
-                <!-- ===== Right Column: Search + Categories + Ad (hidden on mobile) ===== -->
-                <aside class="col-12 col-lg-4">
-                  <!-- Search -->
-                  <div
-                    class="card bg-dark border-secondary text-light mb-4 shadow-sm"
-                  >
-                    <div class="card-body">
-                      <h4 class="h6 mb-3">Search</h4>
-                      <form role="search" action="#" method="get">
-                        <div class="input-group">
-                          <span
-                            class="input-group-text bg-dark border-secondary text-secondary"
-                          >
-                            <i class="bi bi-search"></i>
-                          </span>
-                          <input
-                            type="search"
-                            name="q"
-                            class="form-control bg-dark border-secondary text-light"
-                            placeholder="Search articles…"
-                            aria-label="Search articles"
-                          />
-                          <button class="btn btn-primary" type="submit">
-                            Go
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-
-                  <!-- Categories -->
-                  <div
-                    class="card bg-dark border-secondary text-light mb-4 shadow-sm"
-                  >
-                    <div class="card-body">
-                      <h4 class="h6 mb-3">Categories</h4>
-                      <ul class="list-group list-group-flush">
-                        <li
-                          class="list-group-item bg-transparent text-light d-flex justify-content-between align-items-center border-secondary"
-                        >
-                          Training
-                          <span class="badge text-bg-secondary">8</span>
-                        </li>
-                        <li
-                          class="list-group-item bg-transparent text-light d-flex justify-content-between align-items-center border-secondary"
-                        >
-                          Nutrition
-                          <span class="badge text-bg-secondary">5</span>
-                        </li>
-                        <li
-                          class="list-group-item bg-transparent text-light d-flex justify-content-between align-items-center border-secondary"
-                        >
-                          Health &amp; Recovery
-                          <span class="badge text-bg-secondary">4</span>
-                        </li>
-                        <li
-                          class="list-group-item bg-transparent text-light d-flex justify-content-between align-items-center border-secondary"
-                        >
-                          Success Stories
-                          <span class="badge text-bg-secondary">3</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-          <!-- Advertisement (hidden on mobile) -->
-          <div class="card bg-dark border-secondary text-light mb-4 shadow-sm d-none d-md-block">
-            <div class="card-body text-center">
-              <span class="badge text-bg-warning mb-2">Advertisement</span>
-              <p class="mb-3 text-secondary">Promote your brand or product here.</p>
-              <div class="ratio ratio-16x9 rounded overflow-hidden">
-                <img src="./img/1000652200.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Advertisement">
+            <div class="carousel-item">
+              <img
+                src="./img/1000652219.jpg"
+                class="d-block w-100"
+                style="max-height: 60vh; object-fit: cover"
+                alt="VIP Retreats"
+              />
+              <div class="carousel-caption text-end">
+                <h2 class="fw-semibold text-white">VIP Retreats</h2>
+                <p class="mb-3 text-light">
+                  Total reset in exclusive settings.
+                </p>
+                <a class="btn btn-primary btn-lg" href="#content">Book Now</a>
               </div>
             </div>
           </div>
-        </aside>
-      </div>
-    </div>
-  </main>
-      
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#hero"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hero"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== TWO-COLUMN CONTENT ===== -->
+      <main class="py-5 bg-primary-subtle" id="content">
+        <div class="container">
+          <div class="row g-4">
+            <!-- ===== Left Column: Posts + Pagination ===== -->
+            <div class="col-12 col-lg-8">
+              <!-- Post 1 -->
+              <article
+                class="card bg-dark border-secondary text-light mb-4 shadow-sm"
+              >
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <div class="ratio ratio-4x3">
+                      <img
+                        src="./img/1000652196.jpg"
+                        class="w-100 h-100"
+                        style="object-fit: cover"
+                        alt="Elite 1:1 Coaching"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h3 class="h5 card-title mb-2">Elite 1:1 Coaching</h3>
+                      <p class="card-text text-secondary">
+                        High-performance plan with daily check-ins to transform
+                        your physique sustainably.
+                      </p>
+                      <!--abre la pagina del blog-->
+                      <a class="btn btn-primary btn-sm" href="./pages/blog.html"
+                        >Read more</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Post 2 -->
+              <article
+                class="card bg-dark border-secondary text-light mb-4 shadow-sm"
+              >
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <div class="ratio ratio-4x3">
+                      <img
+                        src="./img/1000652197.jpg"
+                        class="w-100 h-100"
+                        style="object-fit: cover"
+                        alt="Concierge Nutrition Lab"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h3 class="h5 card-title mb-2">
+                        Concierge Nutrition Lab
+                      </h3>
+                      <p class="card-text text-secondary">
+                        Personalized nutrition with metrics and weekly
+                        adjustments for maximum adherence.
+                      </p>
+                      <a
+                        class="btn btn-primary btn-sm"
+                        href="detail-nutrition.html"
+                        >Read more</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Post 3 -->
+              <article
+                class="card bg-dark border-secondary text-light mb-4 shadow-sm"
+              >
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <div class="ratio ratio-4x3">
+                      <img
+                        src="./img/1000652198.jpg"
+                        class="w-100 h-100"
+                        style="object-fit: cover"
+                        alt="Physique Redesign"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h3 class="h5 card-title mb-2">Mage Gallery</h3>
+                      <p class="card-text text-secondary">
+                        Body recomposition with an aesthetic focus and
+                        controlled weekly milestones.
+                      </p>
+                      <a
+                        class="btn btn-primary btn-sm"
+                        href="./pages/galeriaImg.html"
+                        >Read more</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pagination -->
+              <nav aria-label="Posts pagination">
+                <ul class="pagination justify-content-center flex-wrap gap-2">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">3</span>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- ===== Right Column: Search + Categories + Ad (hidden on mobile) ===== -->
+            <aside class="col-12 col-lg-4">
+              <!-- Search -->
+              <div
+                class="card bg-dark border-secondary text-light mb-4 shadow-sm"
+              >
+                <div class="card-body">
+                  <h4 class="h6 mb-3">Search</h4>
+                  <form role="search" action="#" method="get">
+                    <div class="input-group">
+                      <span
+                        class="input-group-text bg-dark border-secondary text-secondary"
+                      >
+                        <i class="bi bi-search"></i>
+                      </span>
+                      <input
+                        type="search"
+                        name="q"
+                        class="form-control bg-dark border border-whtite-subtle text-light"
+                        placeholder="Search articles…"
+                        aria-label="Search articles"
+                      />
+                      <button class="btn btn-primary" type="submit">Go</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Categories -->
+              <div
+                class="card bg-dark border-secondary text-light mb-4 shadow-sm"
+              >
+                <div class="card-body">
+                  <h4 class="h6 mb-3">Categories</h4>
+                  <ul class="list-group list-group-flush">
+                    <li
+                      class="list-group-item bg-transparent text-light d-flex justify-content-between align-items-center border-secondary"
+                    >
+                      Training
+                      <span class="badge text-bg-secondary">8</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent text-light d-flex justify-content-between align-items-center border-secondary"
+                    >
+                      Nutrition
+                      <span class="badge text-bg-secondary">5</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent text-light d-flex justify-content-between align-items-center border-secondary"
+                    >
+                      Health &amp; Recovery
+                      <span class="badge text-bg-secondary">4</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent text-light d-flex justify-content-between align-items-center border-secondary"
+                    >
+                      Success Stories
+                      <span class="badge text-bg-secondary">3</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Advertisement (hidden on mobile) -->
+              <div
+                class="card bg-dark border-secondary text-light mb-4 shadow-sm d-none d-md-block"
+              >
+                <div class="card-body text-center">
+                  <span class="badge text-bg-warning mb-2">Advertisement</span>
+                  <p class="mb-3 text-secondary">
+                    Promote your brand or product here.
+                  </p>
+                  <div class="ratio ratio-16x9 rounded overflow-hidden">
+                    <img
+                      src="./img/1000652200.jpg"
+                      class="w-100 h-100"
+                      style="object-fit: cover"
+                      alt="Advertisement"
+                    />
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </main>
     </main>
 
-    <footer class="footer  text-white pt-3">
+    <footer class="footer text-white pt-3">
       <div class="container">
         <div class="row text-center text-md-start">
           <div class="col-12 col-md-4">
@@ -596,19 +560,9 @@
     </footer>
 
     <script
-
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
   </body>
-
-
 </html>
-
-</html>
-
-
-
-
-

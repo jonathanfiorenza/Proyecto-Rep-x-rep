@@ -1,10 +1,12 @@
+
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 56px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding-top: 56px;
 }
+
 
 .form-control {
   border: none;
@@ -38,6 +40,8 @@ body {
   overflow: hidden;
 }
 
+
+
 main {
   flex-grow: 1;
 }
@@ -50,8 +54,7 @@ footer {
 .logo {
   max-height: 180px;
 }
-  
-.textarea {
-    resize: none;
-}
 
+.textarea {
+  resize: none;
+}
