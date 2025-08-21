@@ -21,7 +21,7 @@
 * Clona el repositorio en tu máquina local:
 ```
 Git Clone
-link de pagina va aqui
+https://github.com/jonathanfiorenza/Proyecto-Rep-x-rep.git
 ```
 
 
